@@ -1,0 +1,133 @@
+body {
+    background-color: #E43636;
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  /* Set the hr color */
+  color: #F6EFD2;  /* old IE */
+  background-color: #F6EFD2;  /* Modern Browsers */
+}
+
+@font-face {
+    font-family: 'VCR_OSD_MONO'; /*a name to be used later*/
+    src: url('./../fonts/VCR_OSD_MONO_1.001.ttf'); /*URL to font*/
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 159px;
+}
+
+
+
+
+.Header .Me h1 {
+    font-family: 'VCR_OSD_MONO';
+    color: #E2DDB4;
+}
+
+.Header .Me h2 {
+    font-family: 'VCR_OSD_MONO';
+}
+
+.Navbar_Wrapper {
+  display: flex;
+  flex-direction: column; /* stack nav and input vertically */
+  align-items: flex-end;  /* push both nav & input to the right */
+  padding: 10px 20px;
+  gap: 8px; /* spacing between nav and input */
+}
+
+
+.Navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar ul { 
+  list-style: none; 
+  display: table;
+  width: 400px;
+  text-align: center;
+}
+.Navbar li { 
+  display: table-cell; 
+  position: relative;
+ 
+}
+
+.Navbar ul li a {
+    color: black;
+    font-family: 'VCR_OSD_MONO';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.Navbar a::after {
+  content: "|";
+  margin-left: 25px; /* space between text and separator */
+  font-weight: 500;
+}
+
+.Header .Navbar_Wrapper input {
+  border: none;
+  padding-left: 15px;
+  width: 250px;   /* makes it wider */
+  height: 30px;  
+}
+
+.Header .Navbar_Wrapper input::placeholder {
+  font-family: 'VCR_OSD_MONO';
+  color: black;
+}
+
+.terminal_w_w {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal_wrapper {
+  margin-top: 50px;
+  height: auto;
+  width: 900px;
+  background-color: #000000;
+  border: #FFFFFF solid 3px;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.terminal {
+  height: 400px;
+  background-color: #000000;
+  border: #FFFFFF solid 3px; 
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.terminal p {
+  color: white;
+  font-family: 'VCR_OSD_MONO';
+  text-align: center;
+}
+
+.terminal .h3kw {
+  text-align: center;
+  font-size: 30px;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* take terminal height */
+}
+
